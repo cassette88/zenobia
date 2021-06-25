@@ -1,0 +1,25 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: lighthouse
+    versions:
+    - 7.0.1
+    - 7.1.0
+    - 7.2.0
+  - dependency-name: gatsby-plugin-sharp
+    versions:
+    - 2.13.1
+    - 2.14.0
+    - 2.14.1
+    - 2.14.2
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
+  - dependency-name: node-gyp
+    versions:
+    - 7.1.2
